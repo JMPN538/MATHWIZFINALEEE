@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MathWiz</title>
+  <link rel="stylesheet" href="HomePageWithUser.css"/>
+  <link rel="stylesheet" href="game2.css"/>
+</head>
+<body>
+  <div class="main">
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="icon">
+        <h2 class="logo">MathWiz</h2>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="HomePageWithUser.html">HOME</a></li>
+          <li><a href="Tutorial.html">TUTORIAL</a></li>
+          <li><a href="Assessment.html">GAMES</a></li>
+          <li><a href="Profile.html">PROFILE</a></li>
+          <li><a href="Leaderboards.html">LEADERBOARDS</a></li>
+        </ul>
+      </div>
+      <div class="user-info">
+        <span id="user-name">Welcome, Guest!</span>
+        <a href="Home.html" id="logout-link" style="display:none;">Logout</a>
+      </div>
+    </div>
+
+    <!-- Game Section -->
+    <div class="game-section container">
+      <h1>Math Sprint Game</h1>
+      <p id="problem"></p>
+      <div class="options" id="options"></div>
+      <p id="result"></p>
+      <p class="score">Score: <span id="currentScore">0</span></p>
+      <p id="timer">Time: <span id="time">20</span> seconds</p>
+      <button id="startBtn">Start Game</button>
+      <button id="resetBtn">Reset Game</button>
+      <p id="highScore">High Score: <span id="highScoreValue">0</span></p>
+      <p>Times Played: <span id="playCountValue">0</span></p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 MathWiz. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+  </div>
+
+  <script type="module" src="game2.js"></script>
+</body>
+</html>

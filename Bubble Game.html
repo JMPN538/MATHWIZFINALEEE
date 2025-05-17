@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MathWiz</title>
+  <link rel="stylesheet" href="design.css" />
+</head>
+<body>
+  <div class="main">
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="icon">
+        <h2 class="logo">MathWiz</h2>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="HomePageWithUser.html">HOME</a></li>
+          <li><a href="Tutorial.html">TUTORIAL</a></li>
+          <li><a href="Assessment.html">GAMES</a></li>
+          <li><a href="Profile.html">PROFILE</a></li>
+          <li><a href="Leaderboards.html">LEADERBOARDS</a></li>
+        </ul>
+      </div>
+
+      <!-- User Info -->
+      <div class="user-info" style="color: white; padding-right: 20px;">
+        <span id="user-name">Welcome, Guest!</span>
+        <a href="#" id="logout-link" style="display:none; margin-left: 10px; color: #ff7200;">Logout</a>
+      </div>
+    </div>
+
+    <!-- Bubble Math Game Section -->
+    <div class="content" style="margin-top: 60px;">
+      <h2 style="color: #ff7200; padding-left: 20px;">🎯 Bubble Math Game (Addition Edition)</h2>
+      <p class="par">Pop the bubbles to reach the target number. Be careful not to go over!</p>
+
+      <div id="targetDisplay" style="color: white; padding-left: 20px;">Target: 0</div>
+      <div id="scoreDisplay" style="color: white; padding-left: 20px;">Current Total: 0</div>
+
+      <div id="bubbleGameArea"
+        style="width: 90%; max-width: 600px; height: 400px; background: rgba(255,255,255,0.1); margin: 20px auto; border: 2px solid #ff7200; border-radius: 10px; position: relative; overflow: hidden;">
+      </div>
+
+      <!-- Game message display -->
+      <div id="gameMessage" style="color: yellow; font-weight: bold; text-align: center; margin-top: 15px; min-height: 24px;"></div>
+
+      <!-- Difficulty Selector -->
+      <div style="text-align: center; margin-top: 20px;">
+        <label for="difficulty" style="color: white; margin-right: 10px;">Select Difficulty:</label>
+        <select id="difficulty" class="btn">
+          <option value="1">Easy</option>
+          <option value="2">Intermediate</option>
+          <option value="3">Hard</option>
+        </select>
+      </div>
+
+      <div style="text-align: center; margin-top: 10px;">
+        <button id="startBtn" class="btn">Start Game</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 MathWiz. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

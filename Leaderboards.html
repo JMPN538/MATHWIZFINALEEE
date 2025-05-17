@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MathWiz Leaderboards</title>
+  <link rel="stylesheet" href="Leaderboards.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="icon">
+      <h2 class="logo">MathWiz</h2>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="HomePageWithUser.html">HOME</a></li>
+        <li><a href="Tutorial.html">TUTORIAL</a></li>
+        <li><a href="Assessment.html">GAMES</a></li>
+        <li><a href="Profile.html">PROFILE</a></li>
+        <li><a href="Leaderboards.html" class="active">LEADERBOARDS</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="main">
+    <section class="leaderboard-section fade-in-left">
+      <h2>Bubble Math Game</h2>
+
+      <h3>Easy</h3>
+      <table id="bubble-easy-table" class="leaderboard-table bubble">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Username</th>
+            <th>Best Time</th>
+            <th>Win Rate</th>
+          </tr>
+        </thead>
+        <tbody id="bubble-easy-body"></tbody>
+      </table>
+
+      <h3>Intermediate</h3>
+      <table id="bubble-intermediate-table" class="leaderboard-table bubble">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Username</th>
+            <th>Best Time</th>
+            <th>Win Rate</th>
+          </tr>
+        </thead>
+        <tbody id="bubble-intermediate-body"></tbody>
+      </table>
+
+      <h3>Hard</h3>
+      <table id="bubble-hard-table" class="leaderboard-table bubble">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Username</th>
+            <th>Best Time</th>
+            <th>Win Rate</th>
+          </tr>
+        </thead>
+        <tbody id="bubble-hard-body"></tbody>
+      </table>
+    </section>
+
+    <section class="leaderboard-section fade-in-right">
+      <h2>Math Sprint Race</h2>
+
+      <h3>All Levels</h3>
+      <table id="sprint-leaderboard-table" class="leaderboard-table sprint-race">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Username</th>
+            <th>High Score</th>
+          </tr>
+        </thead>
+        <tbody id="sprint-leaderboard-body"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 MathWiz. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <script type="module" src="Leaderboards.js"></script>
+</body>
+</html>

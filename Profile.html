@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MathWiz Profile</title>
+  <link rel="stylesheet" href="Profile.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="icon">
+      <h2 class="logo">MathWiz</h2>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="HomePageWithUser.html">HOME</a></li>
+        <li><a href="Tutorial.html">TUTORIAL</a></li>
+        <li><a href="Assessment.html">GAMES</a></li>
+        <li><a href="Profile.html">PROFILE</a></li>
+        <li><a href="Leaderboards.html">LEADERBOARDS</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="main">
+    <div class="profile-content fade-in">
+      <h2>Profile</h2>
+
+      <div class="profile-item">
+        <label for="usernameInput">Username:</label>
+        <span id="profileUsername">Guest</span>
+        <input type="text" id="usernameInput" style="display:none" />
+        <button id="editUsernameBtn" class="edit-btn">Edit</button>
+      </div>
+
+      <div class="profile-item">
+        <label for="emailInput">Email:</label>
+        <span id="profileEmail">Not Provided</span>
+        <input type="email" id="emailInput" style="display:none" />
+        <button id="editEmailBtn" class="edit-btn">Edit</button>
+      </div>
+
+      <div class="profile-item">
+        <label for="passwordInput">Password:</label>
+        <span id="profilePassword">********</span>
+        <input type="password" id="passwordInput" style="display:none" />
+        <button id="editPasswordBtn" class="edit-btn">Edit</button>
+      </div>
+
+      <button id="deleteAccountBtn" class="btn delete-btn">Delete Account</button>
+    </div>
+
+    <!-- Bubble Math Game Difficulty Stats -->
+    <div class="stats-container fade-in" style="margin-top: 40px;">
+      <h2>Bubble Math Game</h2>
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th>Mode</th>
+            <th>Total Matches</th>
+            <th>Win Rate (%)</th>
+            <th>Best Completion Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Easy</td>
+            <td id="easyTotalMatches">0</td>
+            <td id="easyWinRate">0%</td>
+            <td id="easyBestCompletionTime">N/A</td>
+          </tr>
+          <tr>
+            <td>Intermediate</td>
+            <td id="intermediateTotalMatches">0</td>
+            <td id="intermediateWinRate">0%</td>
+            <td id="intermediateBestCompletionTime">N/A</td>
+          </tr>
+          <tr>
+            <td>Hard</td>
+            <td id="hardTotalMatches">0</td>
+            <td id="hardWinRate">0%</td>
+            <td id="hardBestCompletionTime">N/A</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Math Sprint Game Stats -->
+    <div class="stats-container fade-in" style="margin-top: 40px;">
+      <h2>Math Sprint Game</h2>
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th>Games Played</th>
+            <th>High Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="sprintTotalMatches">0</td>
+            <td id="sprintHighScore">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 MathWiz. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <script type="module" src="Profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathWiz Sign In</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">MathWiz</h2>
+            </div>
+
+
+           
+        </div> 
+        
+        <div class="content">
+            <h1>Sign <br><span>In</span></h1>
+
+            <!-- Sign In Form -->
+            <div class="form">
+                <h2>Login to Your Account</h2>
+                <input type="email" name="email" id="email" placeholder="Enter Email Here" required>
+                <input type="password" name="password" id="password" placeholder="Enter Password Here" required>
+                <button class="btnn" id="loginButton">Login</button>
+
+                <!-- Error message will be displayed here -->
+                <p id="errorMessage" style="color: red; display: none;">Incorrect email or password. Please try again.</p>
+
+                <p class="link">Don't have an account? <a href="Sign up.html">Sign up</a> here</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="interface.js"></script>
+</body>
+</html>

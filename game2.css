@@ -1,0 +1,258 @@
+/* RESET STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* LOGO */
+.icon .logo {
+    color: #ff7200;
+    font-size: 36px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* MENU */
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu ul li a:hover {
+    color: #ff7200;
+    transform: scale(1.1);
+}
+
+/* USER INFO */
+.user-info {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.user-info #user-name {
+    margin-right: 20px;
+}
+
+.user-info a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.user-info a:hover {
+    color: #ff7200;
+}
+
+/* MAIN SECTION */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%),
+                url('SignIn.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
+    position: relative;
+}
+
+/* GAME SECTION */
+.game-section {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 114, 0, 0.4);
+    max-width: 700px;
+    text-align: center;
+    animation: fadeInMoveUp 1s ease-out forwards;
+}
+
+.game-section h1 {
+    font-size: 42px;
+    color: #ff7200;
+    margin-bottom: 25px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 5px #000;
+}
+
+#problem {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.options button {
+    background-color: #ff7200;
+    color: #fff;
+    border: none;
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.options button:hover {
+    background-color: #fff;
+    color: #ff7200;
+    transform: scale(1.1);
+}
+
+#result {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #00ff00;
+}
+
+.score, #timer, #highScore {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* START and RESET BUTTONS */
+#startBtn,
+#resetBtn {
+    background-color: transparent;
+    border: 2px solid #ff7200;
+    color: #ff7200;
+    padding: 10px 20px;
+    margin: 10px 10px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#startBtn:hover,
+#resetBtn:hover {
+    background-color: #ff7200;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.footer a {
+    color: #ff7200;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+/* ANIMATION for Content */
+@keyframes fadeInMoveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* OPERATION SELECT BUTTONS */
+
+/* Base style for operation buttons */
+.operation-select button {
+  background-color: #222;
+  color: #ff7200;
+  border: 2px solid #ff7200;
+  margin: 8px;
+  padding: 12px 28px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  box-shadow: none;
+}
+
+/* Hover effect for unselected buttons */
+.operation-select button:hover {
+  background-color: #ff7200;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Selected button style */
+.operation-select button.selected {
+  background-color: #ff7200;
+  color: #000;
+  border-color: #ff4500;
+  box-shadow: 0 0 15px 3px rgba(255, 114, 0, 0.7);
+  transform: scale(1.1);
+  font-weight: 900;
+}

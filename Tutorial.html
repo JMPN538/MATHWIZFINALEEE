@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathWiz</title>
+    <link rel="stylesheet" href="Tutorial.css">
+</head>
+<body>
+    <!-- MAIN SECTION -->
+    <div class="main">
+        <!-- NAVBAR -->
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">MathWiz</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="HomePageWithUser.html">HOME</a></li>
+                    <li><a href="Tutorial.html">TUTORIAL</a></li>
+                    <li><a href="Assessment.html">GAMES</a></li>
+                    <li><a href="Profile.html">PROFILE</a></li>
+                    <li><a href="Leaderboards.html">LEADERBOARDS</a></li>
+                </ul>
+            </div>
+
+            <!-- Display logged-in user -->
+            <div class="user-info">
+                <span id="user-name">Welcome, Guest!</span> <!-- Placeholder for logged-in user's name -->
+                <a href="Home.html" id="logout-link" style="display:none;">Logout</a>
+            </div>
+        </div>
+
+        <!-- TUTORIAL SELECTION -->
+        <div class="tutorial-selection">
+            <h2>Select a Tutorial:</h2>
+            <div class="grade-options">
+                <button class="tutorial-btn" onclick="location.href='Grade 1.html'">Grade 1</button>
+                <button class="tutorial-btn" onclick="location.href='Grade 2.html'">Grade 2</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 MathWiz. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script type="module" src="HomePageWithUser.js"></script> 
+</body>
+</html>

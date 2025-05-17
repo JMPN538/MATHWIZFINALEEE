@@ -1,0 +1,205 @@
+/* RESET STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif; /* Using a modern and clean font */
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px; /* Increased letter-spacing for a more open look */
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6); /* Soft shadow for depth */
+}
+
+.icon .logo {
+    color: #ff7200;
+    font-size: 36px; /* Increased size for emphasis */
+    font-family: 'Lobster', cursive; /* Added a fun cursive font for the logo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for the logo */
+}
+
+/* MENU */
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px; /* Slightly larger font size */
+    transition: 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu ul li a:hover {
+    color: #ff7200;
+    transform: scale(1.1); /* Subtle scaling on hover for effect */
+}
+
+
+
+.btn {
+    height: 35px;
+    width: 100px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #ff7200;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* MAIN SECTION */
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), 
+                url('SignIn.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+/* ABOUT US CONTENT */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    height: calc(100vh - 80px);
+    opacity: 0;
+    animation: fadeInMoveUp 1s ease-out forwards;
+}
+
+.content h1 {
+    font-size: 55px;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 3px;
+    color: #ff7200;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Adding depth to title */
+}
+
+.content span {
+    color: #ff7200;
+    font-size: 70px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Adding depth to span */
+}
+
+.content .par {
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CALL-TO-ACTION BUTTON */
+.cn {
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.cn:hover {
+    background-color: #fff;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer p {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer a {
+    color: #ff7200;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+/* ANIMATION */
+@keyframes fadeInMoveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}

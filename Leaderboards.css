@@ -1,0 +1,219 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body with background and overlay */
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  color: #fff;
+  padding-top: 75px; /* space for navbar */
+  padding-bottom: 60px; /* space for footer */
+  background: #000;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('SignIn.png') no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.6);
+}
+
+.icon .logo {
+  color: #ff7200;
+  font-size: 36px;
+  font-family: 'Lobster', cursive;
+  user-select: none;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu ul li a:hover,
+.menu ul li a:focus,
+.menu ul li a.active {
+  color: #ff7200;
+  transform: scale(1.1);
+}
+
+/* Main container: flex for side-by-side */
+.main {
+  max-width: 1100px;
+  margin: 40px auto 80px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+/* Leaderboard sections */
+.leaderboard-section {
+  flex: 1 1 480px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 25px #00bfff;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  min-width: 300px;
+}
+
+/* Section titles */
+.leaderboard-section h2 {
+  color: #00bfff;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Table styling */
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  border: 1px solid #00bfff;
+  padding: 12px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.leaderboard-table th {
+  background-color: #00bfff;
+  color: #000;
+  font-weight: 700;
+}
+
+/* Different glow for each table */
+.leaderboard-table.bubble {
+  box-shadow: 0 0 15px #ff7200;
+  border-color: #ff7200;
+}
+.leaderboard-table.bubble th,
+.leaderboard-table.bubble td {
+  border-color: #ff7200;
+}
+
+.leaderboard-table.car-race {
+  box-shadow: 0 0 15px #00bfff;
+  border-color: #00bfff;
+}
+.leaderboard-table.car-race th,
+.leaderboard-table.car-race td {
+  border-color: #00bfff;
+}
+
+/* Fade in animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1s ease forwards;
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s ease forwards;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  padding: 15px 0;
+  user-select: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.footer a {
+  color: #ff7200;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 600px;
+  }
+  .leaderboard-section {
+    min-width: auto;
+  }
+}
